@@ -1,3 +1,4 @@
-from fastapi import FastAPI;
-from load_dotenv import doenv;
-load_dotenv;
+from fastapi import FastAPI
+from dotenv import load_dotenv
+load_dotenv()
+app = FastAPI()
