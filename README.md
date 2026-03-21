@@ -22,3 +22,5 @@ A full stack job application tracker that uses AI to read and extract structured
 In active development. Will utilize SDLC and proper software engineering principles
 
 ## Future Features
+
+Easy Apply
