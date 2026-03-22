@@ -24,3 +24,4 @@ In active development. Will utilize SDLC and proper software engineering princip
 ## Future Features
 
 Easy Apply
+Job tracker
