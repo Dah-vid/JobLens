@@ -27,3 +27,4 @@ Easy Apply
 Job tracker
 Auto apply
 AI description
+Alerts
