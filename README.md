@@ -28,3 +28,4 @@ Job tracker
 Auto apply
 AI description
 Alerts
+Networking
