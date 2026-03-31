@@ -29,3 +29,4 @@ Auto apply
 AI description
 Alerts
 Networking
+AI Agents
