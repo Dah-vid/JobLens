@@ -2,6 +2,8 @@ from pydantic import BaseModel
 from fastapi import FastAPI
 from dotenv import load_dotenv
 import anthropic
+import json
+
 load_dotenv()
 app = FastAPI()
 client = anthropic.Anthropic()
@@ -33,4 +35,7 @@ def create_job(job: JobInput):
             }
         ]
     )
-    return {"result": message.content[0].text}
+    raw = message.content[0].text
+    cleaned = raw.strip().removeprefix("```json").removesuffix("```").strip()
+    extracted = json.loads(cleaned)
+    return {"result": extracted}
