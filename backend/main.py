@@ -35,6 +35,7 @@ def create_job(job: JobInput):
             }
         ]
     )
+    #return {"result": message.content[0].text}
     raw = message.content[0].text
     cleaned = raw.strip().removeprefix("```json").removesuffix("```").strip()
     extracted = json.loads(cleaned)
