@@ -35,3 +35,4 @@ People you can message
 Highly matched skills
 Performance metrics
 Linkedin access
+Glassdoor access
