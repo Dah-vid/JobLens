@@ -1,6 +1,9 @@
 from pydantic import BaseModel
 from fastapi import FastAPI
 from dotenv import load_dotenv
+from database import get_connection
+
+
 import anthropic
 import json
 
@@ -39,3 +42,6 @@ def create_job(job: JobInput):
     cleaned = raw.strip().removeprefix("```json").removesuffix("```").strip()
     extracted = json.loads(cleaned)
     return {"result": extracted}
+
+
+#database saving code
