@@ -29,7 +29,7 @@ def create_job(job: JobInput):
                 "content": f"""Extract the following from this job description and return as JSON only, no other text:
                 {{
                     "job_title": "string",
-                    "required_skills": "string",
+                    "extracted_skills": "string",
                     "seniority_level": "string",
                     "salary": "string or null if not mentioned"
                 }}
@@ -41,10 +41,12 @@ def create_job(job: JobInput):
     raw = message.content[0].text
     cleaned = raw.strip().removeprefix("```json").removesuffix("```").strip()
     extracted = json.loads(cleaned)
+    conn = get_connection()
+    cursor = conn.cursor()
+    cursor.execute("INSERT INTO jobs (job_title, extracted_skills, seniority_level, salary) VALUES (%s, %s, %s, %s)", (extracted["job_title"], extracted["extracted_skills"], extracted["seniority_level"], extracted["salary"]) )
+    conn.commit()
+    cursor.close()
+    conn.close()
     return {"result": extracted}
 
 
-#database saving code
-#test 1
-#test 2
-#test 3
