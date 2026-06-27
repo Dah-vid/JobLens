@@ -49,38 +49,3 @@ def create_job(job: JobInput):
     conn.close()
     return {"result": extracted}
 
-#test
-#test 2
-#test 3
-#test 4
-#test 5
-#test 6
-#break 7
-#break 8
-#aws 1
-#aws 2
-#aws break 3
-#aws break 4
-#was break 5
-#aws study break 6
-#aws study break 7
-#aws break 8
-#aws break 9
-#aws break 10
-#aws break 11
-#aws break 12
-#aws break 13
-#aws break 14
-#aws break 15
-#aws break 16
-#aws break 17
-#aws break 18
-#aws break 19
-#aws break 20
-#aws break 21
-#aws break 22
-#app dev
-#app dev 2
-#leetcode 2
-#leetcode 3
-#leetcode 4
