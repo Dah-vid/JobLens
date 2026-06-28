@@ -48,4 +48,5 @@ def create_job(job: JobInput):
     cursor.close()
     conn.close()
     return {"result": extracted}
+#'test
 
