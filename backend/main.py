@@ -39,14 +39,20 @@ def create_job(job: JobInput):
         ]
     )
     raw = message.content[0].text
-    cleaned = raw.strip().removeprefix("```json").removesuffix("```").strip()
-    extracted = json.loads(cleaned)
+    cleaned = raw.strip().removeprefix("```json").removesuffix("```").strip() #strip markdown fences
+    extracted = json.loads(cleaned) #converts to python dictionary because we need key
     conn = get_connection()
     cursor = conn.cursor()
+    #prevent sql injection
     cursor.execute("INSERT INTO jobs (job_title, extracted_skills, seniority_level, salary) VALUES (%s, %s, %s, %s)", (extracted["job_title"], extracted["extracted_skills"], extracted["seniority_level"], extracted["salary"]) )
     conn.commit()
     cursor.close()
     conn.close()
     return {"result": extracted}
-#'test
+
+@app.get("/jobs")
+def get_jobs():
+    conn = get_connection()
+    cursor = conn.cursor()
+    cursor.execute(???)
 
