@@ -52,7 +52,12 @@ def create_job(job: JobInput):
 
 @app.get("/jobs")
 def get_jobs():
-    conn = get_connection()
-    cursor = conn.cursor()
-    cursor.execute(???)
-
+    conn = get_connection() #the conector
+    cursor = conn.cursor() #object that sends sql and reads results back over time
+    cursor.execute("SELECT * FROM jobs") #selects all columns and rows
+    rows = cursor.fetchall() #gets them from python's slect all
+    columns = ["id", "company", "job_title", "salary", "description", "extracted_skills", "seniority_level", "notes", "date_posted", "date_applied", "status"] #establishes the columns
+    jobs_list = [dict(zip(columns, row)) for row in rows] #creates a dictionay of the jbs maching rows and columns with zip
+    cursor.close() #no idea what this does, you didnt explain
+    conn.close() #no idea what this does, you didnt explain
+    return {"jobs": jobs_list}# retrun what we just did, the 
