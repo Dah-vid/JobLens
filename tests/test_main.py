@@ -6,3 +6,4 @@ client = TestClient(app)
 def test_get_jobs():
     response = client.get("/jobs")
     assert response.status_code == 200
+#wil add more
