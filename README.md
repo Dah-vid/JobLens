@@ -40,10 +40,5 @@ Hackajob access
 Welcome to the Jungle access
 
 #test
-#test 2
-#TEST 3
-#test 4
-#test 7
-
 
 
