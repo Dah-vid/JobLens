@@ -40,7 +40,8 @@ Hackajob access
 Welcome to the Jungle access
 Djinni access
 Companies repository
-Multiple models
+Multiple models from different providers
+
 
 
 
