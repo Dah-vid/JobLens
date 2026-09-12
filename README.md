@@ -19,7 +19,7 @@ A full-stack job application tracker that uses AI to read and extract structured
 
 ## Status
 
-In active development. Will utilise SDLC and proper software engineering principles
+In active development. Will utilise SDLC and industry software engineering principles
 
 ## Future Features
 
