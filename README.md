@@ -13,7 +13,7 @@ A full-stack job application tracker that uses AI to read and extract structured
 ## Features
 
 - Paste a job description and get structured data back instantly
-- Track application status: Applied, Interview, Offer, Rejected
+- Track application status: Applied, Interview, Offer, Rejected, Awaiting
 - Add notes to each application
 - Dashboard view of your full pipeline
 
