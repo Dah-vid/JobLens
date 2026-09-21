@@ -34,7 +34,7 @@ Hiring manager contact details finder
 People you can message
 Highly matched skills
 Performance metrics
-Linkedin access
+Linkedin accesss
 Glassdoor access
 Hackajob access
 Welcome to the Jungle access
