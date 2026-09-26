@@ -30,7 +30,7 @@ AI description
 Alerts
 Networking
 AI Agents/Agentic AI
-Hiring manager contact details finder e.g. emails
+Hiring manager contact details finder, e.g. emails
 People you can message
 Highly matched skills
 Performance metrics
