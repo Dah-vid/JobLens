@@ -7,7 +7,7 @@ A full-stack job application tracker that uses AI to read and extract structured
 - **Backend:** FastAPI (Python)
 - **Database:** PostgreSQL
 - **Frontend:** Vanilla HTML/CSS/JS
-- **AI:** Anthropic API, OpenAI API
+- **AI:** Anthropic API, OpenAI API, Open source 
 - **Deployment:** Render (backend), Vercel (frontend), Neon (PostgreSQL)
 
 ## Features
