@@ -1,6 +1,6 @@
 # JobLens
 
-A full-stack job application tracker that uses AI to read and extract structured information from job descriptions — including required skills, seniority level, salary, and job titlesS.
+A full-stack job application tracker that uses AI to read and extract structured information from job descriptions — including required skills, seniority level, salary, and job titles.
 
 ## Tech Stack
 
