@@ -26,7 +26,7 @@ In active development. Will utilise SDLC and industry-standard software engineer
 Easy Apply
 Job tracker
 Auto apply
-AI description
+AI descriptions
 Alerts
 Networking
 AI Agents/Agentic AI
